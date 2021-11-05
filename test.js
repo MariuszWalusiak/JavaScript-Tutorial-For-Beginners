@@ -1,10 +1,10 @@
-// the first alert
-alert("Hello World!")
-
-// the second alert
-alert("Hello World!")
+var youLikeMeat = true;
+var myNum = 10;
 
 
-// make the image invisible
-// move image
-// make the image visible
+if (myNum == 10){
+
+    document.write("myNum is equal to 10");
+} else {
+    document.write("myNum is not equal to 10");
+}
