@@ -1,14 +1,31 @@
-var a = "apple";
-var b = 5
+//var myString = 'I\'m a "fun ninja" string';
 
 
-if (isNaN(a)){
+/*console.log(myString.length);
 
-     console.log("this is not a number");
+console.log(myString.toUpperCase());
+
+console.log(myString.toLocaleLowerCase());
+
+console.log(myString.indexOf("string")); */
+
+
+/*
+if (myString.indexOf("ninja") === -1){
+
+     console.log("the word ninja is not in the string");
 
 } else{
 
-     console.log("meaning of life is " + (a + b));
-     
+     console.log("the word ninja starts at a position " + myString.indexOf("ninja"));
+
 }
+*/
+
+var string1 = "abc";
+var string2 = "bcd";
+
+console.log(string1 === string2)
+
+
 
