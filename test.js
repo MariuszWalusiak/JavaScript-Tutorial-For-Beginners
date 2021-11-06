@@ -1,11 +1,14 @@
-var a = 7;
+var a = "apple";
 var b = 5
 
 
-console.log(a+b)
+if (isNaN(a)){
 
-console.log(Math.round(7.52));
+     console.log("this is not a number");
 
-console.log(Math.floor(7.52));
+} else{
 
-console.log(Math.max(7,  5, 6, 9 ));
+     console.log("meaning of life is " + (a + b));
+     
+}
+
