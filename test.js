@@ -1,31 +1,44 @@
-//var myString = 'I\'m a "fun ninja" string';
+var myArray = new Array();
+myArray[0] = 8;
+myArray[1] = "hello";
 
 
-/*console.log(myString.length);
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "shaun";
+myCar.drive = function(){console.log("now driving");};
 
-console.log(myString.toUpperCase());
-
-console.log(myString.toLocaleLowerCase());
-
-console.log(myString.indexOf("string")); */
+console.log(myCar.driver)
+myCar.drive();
 
 
+//shorthand notation
 /*
-if (myString.indexOf("ninja") === -1){
+var myCar2 = {
 
-     console.log("the word ninja is not in the string");
+    maxSpeed: 70, 
+    driver: "netninja ",
+    drive:function(){console.log("now driving again");}
 
-} else{
+ };
 
-     console.log("the word ninja starts at a position " + myString.indexOf("ninja"));
+console.log(myCar2.maxSpeed);
+myCar2.drive()
 
-}
 */
+var myCar2 = {
 
-var string1 = "abc";
-var string2 = "bcd";
+    maxSpeed: 70, 
+    driver: "netninja ",
+    drive:function(speed, time){console.log(speed * time);}
 
-console.log(string1 === string2)
+ };
+
+console.log(myCar2.maxSpeed);
+myCar2.drive(50, 3)
+
+
+
 
 
 
