@@ -1,44 +1,37 @@
-
+//current date
 /*
-var myCar2 = {
-
-    maxSpeed: 70, 
-    driver: "netninja ",
-    drive:function(speed, time){console.log(speed * time);
-    },
-    logDriver: function(){
-        console.log("Driver name is " + this.driver);
-    }
-
- };
+var myDate = new Date();
+console.log(myDate);
 */
 
-//constructor functions
+// Future and past date
 
-var Car  = function(maxSpeed,driver){
+/*
+var myPastDate = new Date(1545, 11 ,2, 10, 30, 15);
+var myFutureDate = new Date(2515, 0, 31, 10, 30, 15)
 
-    this.maxSpeed = maxSpeed;
-    this.driver = driver;
-    this.drive = function(speed, time){console.log(speed * time);
-    };
-    this.logDriver =  function(){
-        console.log("Driver name is " + this.driver);
-    };
+console.log(myPastDate)
+console.log(myFutureDate)
+*/
 
 
- }
-
-var myCar = new Car(80,"Ninja man");
-var myCar2 = new Car(70,"Ninja2"); 
-var myCar3 = new Car(60,"Ninja woman");
-var myCar4 = new Car(40,"Ninja4");
-
-myCar.drive(30,4);
-myCar3.logDriver();
-
- 
+var birthday = new Date(1991, 2, 25, 11, 15, 25)
 
 
+//get the month of the date (0-11)
+console.log(birthday.getMonth())
 
+//get the full year(YYYY)
+console.log(birthday.getFullYear())
 
+//get the date of the month(1-31)
+console.log(birthday.getDate())
 
+//get the day of the week(0,6)
+console.log(birthday.getDay())
+
+//get the hour of the date(0-23)
+console.log(birthday.getHours())
+
+//get the number of miliseconds since 1st Jan 1970
+console.log(birthday.getTime())
