@@ -1,39 +1,31 @@
-var myArray = new Array();
-myArray[0] = 8;
-myArray[1] = "hello";
 
 
-var myCar = new Object();
-myCar.maxSpeed = 50;
-myCar.driver = "shaun";
-myCar.drive = function(){console.log("now driving");};
-
-console.log(myCar.driver)
-myCar.drive();
-
-
-//shorthand notation
-/*
 var myCar2 = {
 
     maxSpeed: 70, 
     driver: "netninja ",
-    drive:function(){console.log("now driving again");}
+    drive:function(speed, time){console.log(speed * time);
+    },
+    test: function(){
+        console.log(this);
+    }
 
  };
 
-console.log(myCar2.maxSpeed);
-myCar2.drive()
-
-*/
-var myCar2 = {
+ var myCar3 = {
 
     maxSpeed: 70, 
-    driver: "netninja ",
-    drive:function(speed, time){console.log(speed * time);}
+    driver: "shun ",
+    drive:function(speed, time){console.log(speed * time);
+    },
+    test: function(){
+        console.log(this);
+    }
 
  };
 
+myCar2.test();
+myCar3.test();
 console.log(myCar2.maxSpeed);
 myCar2.drive(50, 3)
 
